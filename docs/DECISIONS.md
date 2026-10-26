@@ -2,7 +2,7 @@
 | # | Decision | Choice | Reason | Status |
 |---|---|---|---|---|
 | 1 | Frontend | (e.g. Next.js + TypeScript) | | pending |
-| 2 | Backend | (FastAPI or Next.js API routes) | | pending |
+| 2 | Backend | FastAPI (Python) | High performance, async REST client, robust typing with Pydantic, and clean integration with AI/decision ecosystem | decided |
 | 3 | Database | (Postgres or SQLite first) | | pending |
 | 4 | Auth | (library or managed service) | | pending |
 | 5 | Job queue | | | pending |

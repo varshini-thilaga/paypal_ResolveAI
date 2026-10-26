@@ -12,5 +12,15 @@ LLM reasons, rules decide, humans approve high-risk cases.
 - Original Word files and full Markdown copies: docs/source/
 
 ## Run locally
-(fill in after scaffold)
+```bash
+# 1. Install dependencies
+pip install -r backend/requirements.txt
 
+# 2. Configure .env with your PayPal sandbox credentials (see .env.example)
+
+# 3. Run FastAPI backend server
+python -m uvicorn backend.app.main:app --reload --port 8000
+
+# 4. Run test suite
+python -m pytest backend/tests/
+```

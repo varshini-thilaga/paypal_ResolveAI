@@ -31,7 +31,7 @@ Rule: do tasks strictly in this order, one at a time. At each GATE, stop and wai
 
 **Read first:** docs/07-phases.md (Phase 0), `docs/PayPal-Findings.md`, `docs/DECISIONS.md`
 
-- [ ] **P0.1** [YOU] Create a PayPal developer account, one sandbox **business** account, one sandbox **buyer** account and a REST app (pick a country with full REST support). Put the sandbox client ID and secret in `.env` (never paste them into chat or commit them).
+- [x] **P0.1** [YOU] Create a PayPal developer account, one sandbox **business** account, one sandbox **buyer** account and a REST app (pick a country with full REST support). Put the sandbox client ID and secret in `.env` (never paste them into chat or commit them).
 - [ ] **P0.2** [YOU+AGENT] Stack decision: the agent proposes options with trade-offs for each row of `docs/DECISIONS.md`; you choose; the agent records the choices.
 - [ ] **P0.3** [AGENT] Scaffold the repository to match `docs/02-architecture.md`: folders, lint/format, env loading from `.env`, run instructions in `README.md`. Commit.
 - [ ] **P0.4** [AGENT] Read the current PayPal docs on developer.paypal.com. Write small runnable scripts in `scripts/paypal-sandbox/` for: access token; create order (print the buyer approval link); capture; full refund; partial refund; repeat a refund with the same request ID; add tracking. Record the doc URL used for each endpoint in `docs/PayPal-Findings.md`.
